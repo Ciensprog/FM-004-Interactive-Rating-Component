@@ -3,3 +3,7 @@
 | Typings
 |-------------------------------------------------------------------------------
 */
+
+export type RatingOptionProps = {
+  value: number
+}

@@ -25,6 +25,6 @@
       "@/typings/*": ["./typings/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "typings"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
