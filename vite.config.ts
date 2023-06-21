@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/REPO_NAME/',
+  base: '/FM-004-Interactive-Rating-Component/',
   plugins: [react()],
 })
