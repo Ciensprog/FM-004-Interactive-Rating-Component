@@ -46,6 +46,13 @@ export function App() {
                 <RatingOption value={rating} key={rating} />
               ))}
             </RadioGroup>
+
+            <button
+              className="bg-orange-normal font-bold mt-8 py-3 rounded-[1.375rem] uppercase text-slate-50 tracking-[0.125rem] transition-colors w-full hover:bg-slate-50 hover:text-orange-normal"
+              type="submit"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </main>
