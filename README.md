@@ -22,7 +22,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/CHALLENGE_SOLUTION_URL_SLUG](https://www.frontendmentor.io/solutions/CHALLENGE_SOLUTION_URL_SLUG)
+- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-SgpEUFftS-](https://www.frontendmentor.io/solutions/interactive-rating-component-SgpEUFftS-)
 - Live Site URL: [https://ciensprog.github.io/FM-004-Interactive-Rating-Component/](https://ciensprog.github.io/FM-004-Interactive-Rating-Component/)
 
 ### Built with
