@@ -34,7 +34,9 @@ export function RatingProvider({ children }: PropsWithChildren) {
   const onSubmit: RatingProviderType['onSubmit'] = (event) => {
     event.preventDefault()
 
-    setIsSubmitted(true)
+    if (currentRating !== null) {
+      setIsSubmitted(true)
+    }
   }
 
   return (

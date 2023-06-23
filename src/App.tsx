@@ -51,8 +51,9 @@ export function App() {
               </RadioGroup>
 
               <button
-                className="bg-orange-normal font-bold mt-8 py-3 rounded-[1.375rem] uppercase text-slate-50 tracking-[0.125rem] transition-colors w-full hover:bg-slate-50 hover:text-orange-normal"
+                className="bg-orange-normal font-bold mt-8 py-3 rounded-[1.375rem] uppercase text-slate-50 tracking-[0.125rem] transition-colors w-full [&:is(:not([disabled]))]:hover:bg-slate-50 [&:is(:not([disabled]))]:hover:text-orange-normal disabled:cursor-not-allowed"
                 type="submit"
+                disabled={currentRating === null}
               >
                 Submit
               </button>
