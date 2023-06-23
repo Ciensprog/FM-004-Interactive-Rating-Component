@@ -1,4 +1,4 @@
-import type { PropsWithChildren } from 'react'
+import type { FormEvent, PropsWithChildren } from 'react'
 
 import { createContext, useContext, useState } from 'react'
 
@@ -10,6 +10,8 @@ import { createContext, useContext, useState } from 'react'
 
 type RatingProviderType = {
   currentRating: number | null
+  isSubmitted: boolean
+  onSubmit: (event: FormEvent<HTMLFormElement>) => void
   updateRating: (value: number | null) => void
 }
 
@@ -26,12 +28,21 @@ export function useRatingData() {
 }
 
 export function RatingProvider({ children }: PropsWithChildren) {
-  let [currentRating, setCurrentRating] = useState<number | null>(null)
+  const [currentRating, setCurrentRating] = useState<number | null>(null)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+
+  const onSubmit: RatingProviderType['onSubmit'] = (event) => {
+    event.preventDefault()
+
+    setIsSubmitted(true)
+  }
 
   return (
     <RatingContext.Provider
       value={{
         currentRating,
+        isSubmitted,
+        onSubmit,
         updateRating: setCurrentRating,
       }}
     >
